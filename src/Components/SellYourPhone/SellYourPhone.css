@@ -1,0 +1,53 @@
+.ListGroup{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin: 10px 200px;
+
+}
+
+.CardItem{
+
+    border: solid 1.6px rgb(1, 53, 66);
+    background-color: white;
+    border-radius: 6.9px;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.CardItem:hover{
+    transform: scale(1);
+    box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.6);
+}
+
+.CardItem:focus{
+    border: solid 3px rgb(1, 53, 66);
+    transform: scale(1.08);
+}
+
+.CardItem img{
+
+    width: 140px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.CardItem h2{
+
+    font-size: 130%;
+    padding: 0px;
+    margin: 10px;
+
+
+}
+
+
+.mainList h1{
+    text-align: center;
+}

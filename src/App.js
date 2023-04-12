@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import './App.css';
+import Categories from './Components/Categories/Categories';
+import NavBar from './Components/NavBar/NavBar';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Price from './Components/Price/Price'
+import ListPhones from './Components/Phones/ListPhones';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  return(
 
+    <>
+    <BrowserRouter>
+
+      <NavBar/>
+      <Categories/>
+      
+        <Routes>
+
+          <Route exact path='/' element={<ListPhones/>}/>
+          <Route path='/celulares' element={<ListPhones/>}/>
+          <Route exact path='/accesorios' element={<Price/>}/>
+          <Route exact path='/ofertas' element={<Price/>}/>
+          <Route exact path='/plan-recambio' element={<Price/>}/>
+
+        </Routes>
+    </BrowserRouter>
+
+    </>
+  )
+
+}
 export default App;

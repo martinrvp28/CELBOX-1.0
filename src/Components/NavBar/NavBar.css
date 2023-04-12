@@ -1,0 +1,22 @@
+@font-face {
+    font-family: titleFont;
+    src: url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+}
+
+
+.NavBar {
+    display: grid;
+    grid-template-columns: 10% 78%;
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 53, 66);
+    font-weight: bold;
+    font-size: 120%;
+    
+}
+
+.NavBar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

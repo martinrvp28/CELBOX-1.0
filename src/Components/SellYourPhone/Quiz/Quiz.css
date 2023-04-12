@@ -1,0 +1,86 @@
+.quizContainer{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.questAns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px rgb(104, 104, 104);
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+.questAns h2{
+    text-align: center;
+}
+
+.questAns ul li{
+    list-style: none;
+    
+}
+
+.answersInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px rgb(104, 104, 104);
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+.answersInfo h2{
+    text-align: left;
+    margin-left: 25px;
+}
+
+.answersInfo ul li{
+
+    text-align: left;
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+
+}
+
+.list button{
+    background-color: white;
+    width: 50%;
+    border-radius: 5px;
+
+}
+
+.list button:focus{
+    transform: scale(1.2);
+    border: solid 2px rgb(1, 53, 66);
+}
+
+.buttonCont{
+    margin: 30px;
+}
+
+.finalPrice{
+    display: flex;
+    align-items: center;
+    border-top: solid 1px black;
+    margin: 0px 20px;
+}
+
+.finalPrice h3{
+    margin-right: auto;
+}
